@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KindHearts Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background-color: #d1f2eb;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #b2dfdb;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #00796b;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #00796b;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #004d40;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 50px;
+      background-color: #e0f7fa;
+      border-bottom-left-radius: 60px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #004d40;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #333;
+    }
+
+    .hero-text button {
+      padding: 12px 24px;
+      margin-right: 15px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .hero-text button:hover {
+      background-color: #004d40;
+    }
+
+    .hero-image img {
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 60px 0 30px;
+      font-size: 2rem;
+      color: #00796b;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      padding: 0 50px 60px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #00796b;
+      margin-top: 15px;
+    }
+
+    .about {
+      background-color: #f1f8f6;
+      text-align: center;
+      padding: 60px 40px;
+    }
+
+    .about p {
+      margin: 15px 0 30px;
+      font-size: 1.1rem;
+    }
+
+    .about button {
+      padding: 12px 22px;
+      border: none;
+      background-color: #004d40;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .core-values {
+      background-color: #e0f2f1;
+      padding: 60px 40px;
+      border-top-right-radius: 60px;
+    }
+
+    .core-values ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding-top: 30px;
+    }
+
+    .core-values li {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #d1f2eb;
+      color: #004d40;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KindHearts</div>
+    <nav>
+      <ul>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Every Life Matters</h1>
+      <p>Join us in providing food, clean water, healthcare, and education to communities around the world.</p>
+      <button>Donate</button>
+      <button style="background-color: #b2dfdb; color: #004d40;">Volunteer</button>
+    </div>
+    <div class="hero-image">
+      <img src="hero.jpg" alt="People helping each other">
+    </div>
+  </section>
+
+  <h2 class="section-title">Our Services</h2>
+  <section class="features">
+    <div class="card">
+      <img src="🍲" alt="Food" width="40" />
+      <h3>Meal Programs</h3>
+      <p>Delivering healthy meals to those in need every day.</p>
+    </div>
+    <div class="card">
+      <img src="💧" alt="Water" width="40" />
+      <h3>Clean Water</h3>
+      <p>We build wells and filtration systems for clean drinking water.</p>
+    </div>
+    <div class="card">
+      <img src="🏥" alt="Medical" width="40" />
+      <h3>Healthcare</h3>
+      <p>Offering free medical camps and clinics in remote areas.</p>
+    </div>
+    <div class="card">
+      <img src="📚" alt="Education" width="40" />
+      <h3>Learning Access</h3>
+      <p>Supporting education initiatives for underprivileged children.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Making a Difference Today</h2>
+    <p>Our team is on the ground working with local partners to bring real change. Let’s build a kinder world together.</p>
+    <button>See What We're Doing</button>
+  </section>
+
+  <section class="core-values">
+    <h2>Our Beliefs</h2>
+    <ul>
+      <li><strong>Empathy:</strong> Understanding others with compassion.</li>
+      <li><strong>Transparency:</strong> Clear and honest communication.</li>
+      <li><strong>Commitment:</strong> Staying true to our cause and people.</li>
+      <li><strong>Impact:</strong> Making a measurable difference in lives.</li>
+      <li><strong>Trust:</strong> Built through consistency and care.</li>
+      <li><strong>Unity:</strong> We work better, together.</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 KindHearts Foundation. All rights reserved.
+  </footer>
+</body>
+</html>
